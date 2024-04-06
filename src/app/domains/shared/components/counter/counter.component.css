@@ -1,0 +1,66 @@
+/* nav  */
+.navbar-nav .nav-link,
+    .navbar-nav .dropdown-toggle,
+    .dropdown-menu {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+.navbar-nav .nav-link:hover {
+    color: #0b72e0;
+  }
+
+  .navbar-nav .dropdown:hover .nav-link {
+    color: #0b72e0;
+  }
+
+  .navbar-nav .dropdown-menu .dropdown-item:hover {
+    color: #0b72e0;
+  }
+
+  .navbar-nav .nav-link.disabled:hover {
+    cursor: not-allowed;
+  }
+  /* fin nav  */
+
+
+
+
+
+
+
+
+
+    
+/* footer  */
+/* logo girando */
+
+.logo img {
+    background-size    : cover;
+    background-position: left;
+    width              : 150px;
+    height             : 150px;
+    animation          : rotar 5s linear infinite;
+  
+  }
+  
+  .logo:hover {
+    cursor: pointer;
+  }
+  
+  @keyframes rotar {
+    from {
+      transform: rotateY(180deg);
+    }
+  
+    to {
+      transform: rotateY(-180deg);
+    }
+  
+  
+  }.mb-4.text-center a.btn.btn-outline-dark.btn-floating {
+    transition: background-color 0.3s ease;
+  }
+  
+  .mb-4.text-center a.btn.btn-outline-dark.btn-floating:hover {
+    background-color: #0b72e0; /* Azul claro */
+  }
+  

@@ -1,0 +1,310 @@
+
+  /*
+  ---------------------------------------------
+  popular categories
+  ---------------------------------------------
+  */ 
+  
+  
+  
+  
+  
+   section.popular-categories {
+    padding: 90px 9px;
+  } 
+  
+  section.popular-categories .main-button {
+    text-align: right;
+  }
+  
+  .popular-item {
+    border: 1px solid rgba(243, 243, 243, 0)3, 243, 243, 0)3, 243, 243, 0)3, 243, 243, 0);
+    border-radius: 15px;
+    padding: 30px;
+  }
+  
+  .popular-item .top-content {
+    display: absolute;
+    margin-bottom: 30px;
+  }
+  
+  .popular-item .icon {
+    background-color: #f7f7f7;
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    text-align: center;
+    line-height: 75px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .popular-item .icon img {
+    max-width: 36px;
+    border-radius: 0px;
+  }
+  
+  .popular-item h5{
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  
+  .popular-item span em {
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 8px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #00bdfe;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.06);
+    margin-right: 10px;
+  }
+  
+  .popular-item span {
+    color: #afafaf;
+    font-weight: 400;
+  }
+  
+  .popular-item img {
+    border-radius: 15px;
+  }
+  
+  .popular-item .thumb {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .popular-item .thumb span.category {
+    font-size: 15px;
+    color: #00bdfe;
+    background-color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    position: absolute;
+    left: 15px;
+    top: -60px;
+    padding: 8px 12px;
+    opacity: 0;
+    transition: all .3s;
+  }
+  
+  .popular-item .thumb span.likes {
+    font-size: 15px;
+    color: #00bdfe;
+    background-color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    position: absolute;
+    right: 15px;
+    top: -60px;
+    padding: 8px 12px;
+    opacity: 0;
+    transition: all .3s;
+  }
+  
+  .popular-item .thumb:hover span.category,
+  .popular-item .thumb:hover span.likes {
+    top: 15px;
+    opacity: 1;
+  }
+  
+  .popular-item .border-button {
+    margin-top: 30px;
+    border-radius: 10%;
+    justify-content: none;
+  }
+  
+  .popular-item .border-button a {
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  /* imagenes giratorias  */
+  
+  
+  .section-heading {
+    text-align: center;
+    margin-bottom: 15%;
+    font-size: 45%;
+  }
+  
+  .cardBoxContainer {
+    overflow: hidden;
+    
+  }
+  .cardBox {
+    float: left;
+    font-size: 1.8em;
+    margin: 1% 0 0 1%;
+    margin-bottom: 1%;
+    margin-top: 5%;
+    perspective: 500px;
+    transition: all 0.3s ease 0s;
+    width: 23.7%;
+  
+  }
+  .cardBox:hover .card {
+    transform: rotateY(180deg);
+  }
+  
+  .card {
+    background:transparent;
+    cursor: default;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 100%;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+  
+    
+  }
+  
+  .front, .back {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: rgb(32, 217, 131);
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 0.8em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* imagen  */
+  .front img {
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  
+  .back {
+    transform: rotateY( 180deg);
+  }
+  
+  
+   
+  p {
+    margin-bottom: 1.6em;
+    color: #000000;
+  }
+  
+  h5 {
+    margin-bottom: 1.8em;
+    color: #000000;
+  }
+   
+  
+  a:hover {
+    color: #237206;
+    text-shadow: 0 0 1px #0d8eea;
+  }
+  
+  
+  .cardBox:nth-child(1) .card .back {
+    background:rgba(9, 169, 222, 0.727);
+    border-radius: 5px;
+  }
+   
+  .cardBox:nth-child(2) .card .back {
+    background:rgba(35, 114, 6, 0.763);
+    border-radius: 5px;
+  
+  }
+   
+  .cardBox:nth-child(3) .card .back {
+    background:rgba(9, 169, 222, 0.727);
+    border-radius: 5px;
+  
+  }
+   
+  .cardBox:nth-child(4) .card .back {
+    background:rgba(35, 114, 6, 0.763);
+    border-radius: 5px;
+  
+  }
+  
+  .cardBox:nth-child(2) .card {
+    -webkit-animation: giro 1.5s 1;
+    animation: giro 1.5s 1;
+  }
+   
+  .cardBox:nth-child(3) .card {
+    -webkit-animation: giro 2s 1;
+    animation: giro 2s 1;
+  }
+   
+  .cardBox:nth-child(4) .card {
+    -webkit-animation: giro 2.5s 1;
+    animation: giro 2.5s 1;
+  }
+  
+  @keyframes giro {
+    from {
+      transform: rotateY( 180deg);
+    }
+    to {
+      transform: rotateY( 0deg);
+    }
+  }
+  
+  @-webkit-keyframes giro {
+    from {
+      transform: rotateY( 180deg);
+    }
+    to {
+      transform: rotateY( 0deg);
+    }
+  }
+  @media screen and (max-width: 767px) {
+  
+    .cardBox {
+      margin-left: 2.8%;
+      margin-top: 3%;
+      width: 46%;
+    }
+  
+    .card {
+      height: 285px;
+    }
+  
+    .cardBox:last-child {
+      margin-bottom: 3%;
+    }
+  
+  }
+  
+  
+  @media screen and (max-width: 480px) {
+  
+    .cardBox {
+      width: 99.5%;
+      height: 290px;
+    }
+  
+  }
+  
+  /* fin imagenes  */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

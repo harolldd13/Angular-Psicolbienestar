@@ -1,0 +1,343 @@
+
+
+/* header  */
+.py-5 {
+  padding-top   : 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+
+.profile {
+  position     : relative;
+  height       : 75vw;
+  width        : 75vw;
+  border-radius: 5vw;
+  margin-top   : 5vw;
+  max-height   : 40rem;
+  max-width    : 40rem;
+}
+
+.profile .profile-img {
+  height    : 80vw;
+  max-height: 45rem;
+  position  : absolute;
+  bottom    : 0;
+  left      : 50%;
+  transform : translateX(-50%);
+}
+
+.profile .dots-1 {
+  position: absolute;
+  width   : 3vw;
+  right   : 1.5vw;
+  top     : 4vw;
+}
+
+.profile .dots-1 svg {
+  fill: #fff;
+}
+
+.profile .dots-2 {
+  position: absolute;
+  width   : 3vw;
+  right   : -4vw;
+  top     : 6.05vw;
+}
+
+.profile .dots-2 svg {
+  fill: #1e30f3;
+}
+
+.profile .dots-3 {
+  position: absolute;
+  width   : 3vw;
+  left    : 1.5vw;
+  bottom  : 6.05vw;
+}
+
+.profile .dots-3 svg {
+  fill: #fff;
+}
+
+.profile .dots-4 {
+  position: absolute;
+  width   : 3vw;
+  left    : -4vw;
+  bottom  : 4vw;
+}
+
+.profile .dots-4 svg {
+  fill: #057916;
+}
+
+@media (min-width: 576px) {
+  .profile {
+    height: 60vw;
+    width : 60vw;
+  }
+
+  .profile .profile-img {
+    height: 65vw;
+  }
+
+  .profile .dots-1 {
+    width: 3vw;
+    right: 1.5vw;
+  }
+
+  .profile .dots-2 {
+    width: 3vw;
+    right: -4vw;
+  }
+
+  .profile .dots-3 {
+    width: 3vw;
+    left : 1.5vw;
+  }
+
+  .profile .dots-4 {
+    width: 3vw;
+    left : -4vw;
+  }
+}
+
+/* @media (min-width: 768px) { */
+.profile {
+  height: 50vw;
+  width : 50vw;
+}
+
+.profile .profile-img {
+  height: 55vw;
+}
+
+.profile .dots-1 {
+  width: 3vw;
+  right: 1.5vw;
+}
+
+.profile .dots-2 {
+  width: 3vw;
+  right: -4vw;
+}
+
+.profile .dots-3 {
+  width: 3vw;
+  left : 1.5vw;
+}
+
+.profile .dots-4 {
+  width: 3vw;
+  left : -4vw;
+}
+
+/* } */
+/* @media (min-width: 992px) { */
+.profile {
+  height: 40vw;
+  width : 40vw;
+}
+
+.profile .profile-img {
+  height: 45vw;
+}
+
+.profile .dots-1 {
+  width: 1.5vw;
+  right: 0.75vw;
+}
+
+.profile .dots-2 {
+  width: 1.5vw;
+  right: -2vw;
+}
+
+.profile .dots-3 {
+  width: 1.5vw;
+  left : 0.75vw;
+}
+
+.profile .dots-4 {
+  width: 1.5vw;
+  left : -2vw;
+}
+
+/* } */
+
+
+/* @media (min-width: 1200px) { */
+.profile {
+  height: 35vw;
+  width : 35vw;
+}
+
+.profile .profile-img {
+  height: 40vw;
+}
+
+.profile .dots-1 {
+  width: 1.5vw;
+  right: 0.75vw;
+}
+
+.profile .dots-2 {
+  width: 1.5vw;
+  right: -2vw;
+}
+
+.profile .dots-3 {
+  width: 1.5vw;
+  left : 0.75vw;
+}
+
+.profile .dots-4 {
+  width: 1.5vw;
+  left : -2vw;
+}
+
+.bg-gradient-primary-to-secondary {
+  background: #1e30f3;
+  background: linear-gradient(135deg, #1e30f3 0%, #198754 100%);
+}
+
+.text-gradient {
+  background             : -webkit-linear-gradient(315deg, #1e30f3 0%, #198754 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/*  fin header  */
+
+
+
+/* 1 seccion  */
+.px-5 {
+  padding-right: 3rem !important;
+  padding-left : 3rem !important;
+}
+
+
+
+
+
+
+
+/* portafolio  */
+.portfolio-item {
+  display  : block;
+  position : relative;
+  overflow : hidden;
+  max-width: 530px;
+  margin   : auto auto 1rem;
+}
+
+.portfolio-item .caption {
+  display         : flex;
+  height          : 100%;
+  width           : 100%;
+  background-color: rgba(33, 37, 41, 0.2);
+  position        : absolute;
+  top             : 0;
+  bottom          : 0;
+  z-index         : 1;
+}
+
+.portfolio-item .caption .caption-content {
+  color : #fff;
+  margin: auto 2rem 2rem;
+}
+
+.portfolio-item .caption .caption-content h2,
+.portfolio-item .caption .caption-content .h2 {
+  font-size     : 0.8rem;
+  text-transform: uppercase;
+}
+
+.portfolio-item .caption .caption-content p {
+  font-weight: 300;
+  font-size  : 1.2rem;
+}
+
+/* @media (min-width: 992px) { */
+.portfolio-item {
+  max-width: none;
+  margin   : 0;
+}
+
+.portfolio-item .caption {
+  transition       : background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+  transition       : clip-path 0.25s ease-out, background-color 0.7s;
+  transition       : clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
+  -webkit-clip-path: inset(0px);
+  clip-path        : inset(0px);
+}
+
+.portfolio-item .caption .caption-content {
+  transition   : opacity 0.25s;
+  margin-left  : 5rem;
+  margin-right : 5rem;
+  margin-bottom: 5rem;
+}
+
+.portfolio-item img {
+  transition       : -webkit-clip-path 0.25s ease-out;
+  transition       : clip-path 0.25s ease-out;
+  transition       : clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
+  -webkit-clip-path: inset(-1px);
+  clip-path        : inset(-1px);
+}
+
+.portfolio-item:hover img {
+  -webkit-clip-path: inset(2rem);
+  clip-path        : inset(2rem);
+}
+
+.portfolio-item:hover .caption {
+  background-color: rgba(5, 100, 5, 0.2);
+  -webkit-clip-path: inset(2rem);
+  clip-path        : inset(2rem);
+}
+/* fin portafolio  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

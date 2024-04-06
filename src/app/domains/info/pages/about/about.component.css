@@ -1,0 +1,4 @@
+.btn.btn-outline-dark:hover {
+  color: rgb(245, 245, 245);
+  background-color: rgb(5, 109, 199);/* Cambia el color del ícono a azul cuando se hace hover */
+}

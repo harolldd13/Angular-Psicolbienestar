@@ -1,0 +1,435 @@
+
+<div class="title-container">
+    <h1 class="static-title">HISTORIA CLÍNICA</h1>
+  </div>
+   <br>
+   
+   <!-- baner d einformacion del apciente -->
+   <div class="md:flex md:items-center">
+    <!-- Imagen del paciente -->
+    <div class="flex items-center justify-center w-full h-48 bg-transparent sm:w-96">
+      <img src="assets/profesionales/profesional1.jpg" class="w-40 h-40 object-cover rounded-full border-2 border-green-500" alt="Foto del paciente">
+  </div>
+  
+    <!-- Información del paciente -->
+    <div class="w-full ml-4">
+        <!-- Nombre del paciente -->
+        <h2 class="text-lg font-semibold mb-4">Juan Jose Garcia</h2>
+        <!-- Información del paciente -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Grupo de información 1 -->
+            <div>
+                <div>
+                    <span class="font-semibold">Edad:</span>
+                    <span>30 años</span>
+                </div>
+                <div>
+                    <span class="font-semibold">Teléfono:</span>
+                    <span>+57 312-548-874</span>
+                </div>
+                <div>
+                    <span class="font-semibold">Correo:</span>
+                    <span>psicolbienestargmail.com</span>
+                </div>
+            </div>
+            <!-- Grupo de información 2 -->
+            <div>
+                <div>
+                    <span class="font-semibold">Dirección:</span>
+                    <span>Cr 45 098</span>
+                </div>
+                <div>
+                    <span class="font-semibold">Estado civil:</span>
+                    <span>Soltero</span>
+                </div>
+                <div>
+                    <span class="font-semibold">Género:</span>
+                    <span>Heterosexual</span>
+                </div>
+            </div>
+            <!-- Grupo de información 3 -->
+            <div>
+                <div>
+                    <span class="font-semibold">Profesión:</span>
+                    <span>Oficios Varios</span>
+                </div>
+                <div>
+                    <span class="font-semibold">EPS:</span>
+                    <span>EPS Salud</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-xxl">
+    <div class="content-box">
+    
+      <nav class="navbar navbar-expand-lg bg-light justify-content-center"> 
+        <!-- Primer conjunto de botones -->
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <ul class="nav flex-column d-grid">
+              <li class="nav-item">
+                <a class="nav btn btn-primary btn-lg" href="#" data-bs-toggle="modal" data-bs-target="#motivoConsultaModal">
+                  <i class="bx bxs-band-aid fs-4"> </i> MOTIVO CONSULTA
+                </a>
+            </li>
+            
+            <!-- Modal para el Motivo de Consulta -->
+            <div class="modal fade" id="motivoConsultaModal" tabindex="-1" aria-labelledby="motivoConsultaModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-center" id="motivoConsultaModalLabel">Motivo de Consulta</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          
+                          <textarea class="form-control" rows="5" placeholder="Que refiere el paciente..."></textarea>
+                      </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Guardar </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             
+       
+              <li class="nav-item">
+                <a class="nav btn btn-warning btn-lg" href="#" data-bs-toggle="modal" data-bs-target="#mental">
+                    <i class="bx bxs-brain fs-4"></i> MENTAL
+                </a>
+            </li>
+                          
+            <!-- Modal para el Motivo de examen mental -->
+            <div class="modal fade" id="mental" tabindex="-1" aria-labelledby="mentalModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title text-center" id="mentalModalLabel">Examen Mental</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        
+                        <textarea class="form-control" rows="5" placeholder="Evaluación como profesional, estado de la memoria, conciencia, lenguaje, sueño etc..."></textarea>
+                    </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-primary">Guardar </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        
+              <li class="nav-item">
+                <a class="nav btn btn-success btn-lg" href="#" data-bs-toggle="modal" data-bs-target="#anamnesis">
+                  <i class="bx bxs-book-add fs-4"> </i> ANAMNESIS
+                </a>
+                            <!-- Modal para el Motivo de amnanesis -->
+            <div class="modal fade" id="anamnesis" tabindex="-1" aria-labelledby="anamnesisModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title text-center" id="mentalModalLabel">Relación Familiar</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        
+                        <textarea class="form-control" rows="5" placeholder="Evaluación de vinculos afectivos, tipo de familia etc..."></textarea>
+                    </div>
+                    <div class="modal-header">
+                      <h5 class="modal-title text-center" id="mentalModalLabel">Historia de Vida </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    
+                    <textarea class="form-control" rows="5" placeholder="Evaluación de Etapas del desarrollo..."></textarea>
+                </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-primary">Guardar </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Segundo conjunto de botones -->
+          <div class="col-md-3">
+            <ul class="nav flex-column d-grid">
+              <li class="nav-item">
+                <a class="nav btn btn-success btn-lg" href="#" data-bs-toggle="modal" data-bs-target="#antecedentes">
+                  <i class="bx bxs-detail fs-4"> </i> ANTECEDENTES
+                </a>
+                            <!-- Modal para el Motivo de antecedentes -->
+            <div class="modal fade" id="antecedentes" tabindex="-1" aria-labelledby="antecedentesModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title text-center" id="mentalModalLabel">Antecedentes</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        
+                        <textarea class="form-control" rows="5" placeholder="Evaluación de antecedentes psicologicos y medicos..."></textarea>
+                    </div>
+                  
+                  
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-primary">Guardar </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav btn btn-danger btn-lg" href="#" data-bs-toggle="modal" data-bs-target="#entorno">
+                  <i class="bx bxs-group fs-4"> </i> ENTORNOS SOCIALES
+                </a>
+                                           <!-- Modal para el Motivo de entorno -->
+            <div class="modal fade" id="entorno" tabindex="-1" aria-labelledby="entornoModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title text-center" id="mentalModalLabel">Factores Protectores </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        
+                        <textarea class="form-control" rows="5" placeholder="Identificados en la sesion..."></textarea>
+                    </div>
+                    <div class="modal-header">
+                      <h5 class="modal-title text-center" id="mentalModalLabel">Factores de Riesgo </h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    
+                    <textarea class="form-control" rows="5" placeholder="Identificados en la sesion..."></textarea>
+                </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-primary">Guardar </button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+
+              </li>
+              <li class="nav-item">
+                <a class="nav btn btn-info btn-lg" href="#" data-bs-toggle="modal" data-bs-target="#analisis">
+                  <i class="bx bxs-spreadsheet fs-4"> </i> ANÁLISIS
+                </a>
+                                                           <!-- Modal para analisis-->
+            <div class="modal fade" id="analisis" tabindex="-1" aria-labelledby="analisisModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title text-center" id="mentalModalLabel">Desarrollo de la Sesión</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        
+                        <textarea  class="form-control" rows="5" placeholder="Apartado para escribir todo lo que se trabajo en la sesion y demas informacón importante"></textarea>
+                    </div>
+                    
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="button" class="btn btn-primary">Guardar </button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+              </li>
+              
+            </ul>
+          </div>
+
+          <!-- Tercer conjunto de botones -->
+          <div class="col-md-3">
+            <ul class="nav flex-column d-grid">
+
+              <li class="nav-item">
+                <a class="nav btn btn-warning btn-lg" href="#" data-bs-toggle="modal" data-bs-target="#diagnostico"> 
+                   <i class='bx bxs-file-plus fs-4'></i> DIAGNÓSTICO
+                </a>
+                       <!-- Modal para Diagnostico-->
+                       <div class="modal fade" id="diagnostico" tabindex="-1" aria-labelledby="diagnosticoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl"> <!-- Cambia modal-lg a modal-xl si necesitas más amplitud -->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-center" id="mentalModalLabel">Diagnóstico Principal</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <!-- Campo de búsqueda con icono de lupa -->
+                                        <div class="col-md-3 mb-3">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Buscar Dx..." aria-label="Buscar" aria-describedby="basic-addon2">
+                                                <button class="btn btn-outline-secondary" type="button"><i class="bi bi-search"></i></button>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Input para escribir el nombre -->
+                                        <div class="col-md-6 mb-3">
+                                            <label for="nombre" class="form-label">Nombre</label>
+                                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre">
+                                        </div>
+                                        
+                                        <!-- Input de selección de opciones -->
+                                        <div class="col-md-3 mb-3">
+                                            <label for="opciones" class="form-label">Tipo DX</label>
+                                            <select class="form-select" id="opciones">
+                                                <option value="confirmado">Confirmado</option>
+                                                <option value="impresion">Impresión diagnóstica</option>
+                                                <option value="repetitivo">Repetitivo</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="modal-header">
+                                  <h5 class="modal-title text-center" id="mentalModalLabel">Diagnóstico Relacionado</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                  <div class="row">
+                                      <!-- Campo de búsqueda con icono de lupa -->
+                                      <div class="col-md-3 mb-3">
+                                          <div class="input-group">
+                                              <input type="text" class="form-control" placeholder="Buscar Dx..." aria-label="Buscar" aria-describedby="basic-addon2">
+                                              <button class="btn btn-outline-secondary" type="button"><i class="bi bi-search"></i></button>
+                                          </div>
+                                      </div>
+                                      
+                                      <!-- Input para escribir el nombre -->
+                                      <div class="col-md-6 mb-3">
+                                          <label for="nombre" class="form-label">Nombre</label>
+                                          <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre">
+                                      </div>
+                                      
+                                      <!-- Input de selección de opciones -->
+                                      <div class="col-md-3 mb-3">
+                                          <label for="opciones" class="form-label">Tipo DX</label>
+                                          <select class="form-select" id="opciones">
+                                              <option value="confirmado">Confirmado</option>
+                                              <option value="impresion">Impresión diagnóstica</option>
+                                              <option value="repetitivo">Repetitivo</option>
+                                          </select>
+                                      </div>
+                                  </div>
+                                  
+                              </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Guardar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+              </li>
+
+              <li class="nav-item">
+                <a class="nav btn btn-primary btn-lg" href="#" data-bs-toggle="modal" data-bs-target="#manejo">
+                  <i class="bx bxs-capsule fs-4"> </i> PLANES DE MANEJO
+                </a>
+                <div class="modal fade" id="manejo" tabindex="-1" aria-labelledby="manejoModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title text-center" id="mentalModalLabel">Tratamiento</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            
+                            <textarea class="form-control" rows="5" placeholder="Enfoque terapeutico y recomendaciones o  tareas"></textarea>
+                            <label for="nombre" class="form-label">Numero de Sesiones</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Ingrese el numero">
+                            <label for="opciones" class="form-label">Periocidad</label>
+                            <select class="form-select" id="opciones">
+                                <option value="confirmado">Diaria</option>
+                                <option value="impresion">Semanal</option>
+                                <option value="repetitivo">Quincenal</option>
+                                <option value="repetitivo">Mensual</option>
+                            </select>
+                          </div>
+                   
+                        
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              <button type="button" class="btn btn-primary">Guardar </button>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav btn btn-secondary btn-lg" href="#" data-bs-toggle="modal" data-bs-target="#remision">
+                  <i class="bx bxs-ambulance fs-4"> </i>REMISIÓN
+                </a>
+                <div class="modal fade" id="remision" tabindex="-1" aria-labelledby="remisionModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title text-center" id="mentalModalLabel">Remisión</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            
+                            
+                            <label for="nombre" class="form-label">Criterio de Remisión</label>
+                            <textarea class="form-control" rows="5" placeholder="Justificación"></textarea>
+
+                            <label for="opciones" class="form-label">Especilidad</label>
+                            <select class="form-select" id="opciones">
+                                <option value="confirmado">Psicologia</option>
+                                <option value="impresion">Psiquiatria</option>
+                                <option value="repetitivo">Medicina Geneal</option>
+                                <option value="repetitivo">Otro</option>
+                            </select>
+                          </div>
+                   
+                        
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              <button type="button" class="btn btn-primary">Guardar </button>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </li>
+              
+            
+            </ul>
+          </div>
+
+          <!-- 4 conjunto de botones -->
+          <div class="col-md-3">
+            <ul class="nav flex-column d-grid">
+
+              <li class="nav-item">
+                <a class="nav btn btn-danger btn-lg" href="#" data-bs-toggle="modal" data-bs-target="#imprimir">
+                  <i class="bx bxs-box fs-4"> </i>  GUARDAR
+                </a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav btn btn-dark btn-lg" href="#" data-bs-toggle="modal" data-bs-target="#imprimir">
+                  <i class="bx bxs-archive-in fs-4"> </i> IMPRIMIR
+                </a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+  </div>

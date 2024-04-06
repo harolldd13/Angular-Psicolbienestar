@@ -1,0 +1,129 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Estilos únicos de psicología para la página de registro */
+
+
+.logo img {
+  display: block;
+  margin: 0 auto;
+  width              : 110px;
+  height             : 105px;
+  animation          : rotar 10s linear infinite;
+
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+@keyframes rotar {
+  from {
+    transform: rotateY(180deg);
+  }
+
+  to {
+    transform: rotateY(-180deg);
+  }
+}
+
+
+
+.register-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Times New Roman', Times, serif;
+  max-width: 350px;
+  background-color: transparent;
+  padding: 40px;
+  border: 1px solid #dbdbdb;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(6, 93, 234, 0.923);
+  text-align: center;
+  margin-top: 0;
+  z-index: 1; /* Asegura que esté sobre otros elementos */
+}
+
+h2 {
+  color: #262626;
+  margin-bottom: 30px;
+}
+p{
+  text-align: center;
+  color: hsl(0, 0%, 0%);
+
+}
+
+button{
+  color: #3897f0;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+label {
+  display: block;
+  font-size: 22px;
+  color: hsl(0, 0%, 0%);
+  margin-bottom: 5px;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.btn-primary {
+  background-color: #3897f0;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.btn-primary:hover {
+  background-color: #2684f3;
+}
+.error-message {
+  color: #ed4956;
+  margin-top: 10px;
+
+  
+}
+
+.social-icons {
+  text-align: center;
+  padding: 30px 40px;
+  font-size: 22px;
+
+}
+
+.svg-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-height: 300px; /* Establece una altura máxima para el SVG */
+  z-index: 0; /* Asegura que esté detrás del formulario */
+}
+
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px; /* Ajusta el espaciado entre los iconos según sea necesario */
+}
+/* Media Queries para hacer responsive */
+@media screen and (max-width: 768px) {
+  .register-container {
+    max-width: 90%;
+    padding: 20px; /* Ajusta el espacio interior del contenedor en dispositivos móviles */
+  }
+}

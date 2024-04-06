@@ -1,0 +1,34 @@
+.custom-modal-container {
+    position: fixed;
+    top: 50%; /* Posición vertical centrada */
+    left: 50%; /* Posición horizontal centrada */
+    transform: translate(-50%, -50%); /* Centra el modal en la pantalla */
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #04136b;
+    border-radius: 5px;
+    padding: 20px;
+    width: 60%; /* Ancho del modal */
+    max-width: 800px; /* Ancho máximo del modal */
+    overflow-y: auto; /* Habilitar el desplazamiento vertical si el contenido es demasiado grande */
+    z-index: 9999; 
+  }
+  
+  .custom-modal-header {
+    margin-bottom: 10px;
+  }
+  
+  .custom-modal-body {
+    margin-bottom: 20px;
+  }
+  
+  .custom-modal-footer {
+    text-align: right;
+  }
+  .preview-image-container {
+    max-width: 100px; /* Ancho máximo de la vista previa de la imagen */
+  }
+  
+  .preview-image {
+    max-width: 100%;
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+  }

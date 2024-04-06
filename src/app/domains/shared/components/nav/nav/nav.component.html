@@ -1,0 +1,53 @@
+
+<header>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3 col-sm-3 col-3">
+              <div class="logo">
+                  <img src="assets/logofinal.png" routerLink= "/home" class="logo" style="margin-top: 35px;">
+              </div>
+          </div>
+          <div class="col-md-9 col-sm-9 col-9 text-end">
+              <div class="menu-icon" (click)="openMenu()">
+                  <i class="{{menu_icon}}"></i>
+              </div>
+              <div class="desktop_menu" [class.mobile_menu]="menuValue">
+                  <ul>
+                      <li (click)="closeMenu()" routerLink= "/home" > Inicio </li>
+
+                      <li (click)="closeMenu()" routerLink= "/about">Acerca de</li>
+                      <li (click)="closeMenu()" routerLink= "/historia">Histora </li>
+
+
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"  routerLink="/categoria"    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" routerLink= "/autoestima">Autoestima</a></li>
+                          <li><a class="dropdown-item" routerLink= "/amorpropio">Amor propio</a></li>
+                          <li><a class="dropdown-item" routerLink= "/autoconfianza">Autoconfianza</a></li>
+                        </ul>
+                      </li>
+                      <li (click)="closeMenu()" routerLink= "/profesionales">Profesionales</li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Recursos
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="/recursos">Todos los recursos</a></li>
+                          <li><a class="dropdown-item" href="#">videos</a></li>
+                          <li><hr class="dropdown-divider"> </li>
+                          <li><a class="dropdown-item" href="#">Revistas</a></li>
+                          <li><a class="dropdown-item" href="#">PDF</a></li>
+
+                        </ul>
+                      </li>
+
+                      <!-- <li (click)="closeMenu()">Contacto</li> -->
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+</header>

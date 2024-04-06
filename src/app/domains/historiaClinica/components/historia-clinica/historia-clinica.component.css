@@ -1,0 +1,87 @@
+.nav-item {
+    margin-bottom: 12px; /* Espacio entre botones */
+    position: relative; /* Permitir posicionamiento relativo */
+    text-align: center;
+    margin-bottom: 12px ;  /* Alinear el texto en el centro */
+  }
+
+  .nav-item a {
+    display: flex; /* Utilizar flexbox */
+    align-items: center; /* Centrar verticalmente los elementos flexibles */
+    justify-content: center; /* Centrar horizontalmente los elementos flexibles */
+    padding-top: 20px; /* Espacio adicional en la parte superior para el ícono */
+  }
+
+
+
+  
+.container-xxl {
+    background: linear-gradient(white, #e7e6e8); /* Fondo blanco degradado */
+    padding: 4px; /* Espacio alrededor del cuadro */
+  }
+
+  .content-box {
+    background: rgb(10, 106, 10);
+    border: 8px solid #cccccc;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+.container {
+    text-align: center;
+}
+
+img {
+    max-width: 50%; 
+}
+
+/* Estilos para el título de navegación */
+
+
+.title-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #3b4edd;
+  }
+  
+  .static-title {
+    color: #ffffff;
+    font-size: 36px;
+    margin: 0;
+  }
+
+
+/* Estilos para LOS TITULOS DE LOS MODALES */
+.navbar-nav {
+    text-align: center; /* Centra los elementos horizontalmente */
+  }
+
+  .navbar-nav li {
+    display: inline-block; /* Alinea los elementos en línea */
+    margin: 0 10px; /* Agrega espacio entre los elementos */
+    text-align: center;
+  }
+
+/* estilo contenedor de los modales */
+
+.details {
+    color: rgb(81, 20, 178)(76, 0, 255);
+    font-weight: bold;
+    text-align: center;
+  }
+
+
+
+.color-acento {
+    color: rgb(228, 233, 236);
+}
+
+.color-acentoo {
+    color: rgb(13, 126, 7);
+}
+
+.container-fluid {
+    background:#0f9b0f;
+}
+
+

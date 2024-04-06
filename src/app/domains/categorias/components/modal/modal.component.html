@@ -1,0 +1,29 @@
+<div class="custom-modal-container">
+  <div class="custom-modal-header">
+    <h5 class="modal-title">{{ editar ? 'Editar' : 'Agregar' }} Categoría</h5>
+  </div>
+  <div class="custom-modal-body">
+    <form (ngSubmit)="guardarCategoria()">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" class="form-control" id="nombre" [(ngModel)]="data.nombre" name="nombre">
+      </div>
+      <div class="form-group">
+        <label for="descripcion">Descripción:</label>
+        <textarea class="form-control" id="descripcion" [(ngModel)]="data.descripcion" name="descripcion"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="imagen">Imagen:</label>
+        <input type="file" class="form-control" id="imagen" (change)="onFileSelected($event)" accept="image/*">
+      </div>
+      <div *ngIf="selectedImage" class="preview-image-container">
+        <img [src]="selectedImage" alt="Vista previa de la imagen" class="preview-image">
+      </div>
+      <button type="submit" class="btn btn-primary">{{ editar ? 'Actualizar' : 'Guardar' }}</button>
+      <button type="button" class="btn btn-success" (click)="cerrarModal()">Aceptar</button>
+    </form>
+  </div>
+  <div class="custom-modal-footer">
+    <button type="button" (click)="cancelarEdicion()" class="btn btn-danger">Cancelar</button>
+  </div>
+</div>

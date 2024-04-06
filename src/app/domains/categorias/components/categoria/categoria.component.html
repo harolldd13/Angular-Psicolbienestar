@@ -1,0 +1,60 @@
+
+
+<section class="bg-center bg-no-repeat" style="background-image: url('/assets/amorpropio/amorpropio1.jpg')">
+  <div class="px-4 mx-auto max-w-screen-xl text-center py-10 lg:py-40">
+      <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Queremos acompañarte en fomentar tu bienestar emocional y mental</h1>
+      <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Disfruta y vive cada herramienta creada para TI, aqui abajo .</p>
+      <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+          <a routerLink="/categoria" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+              Iniciar
+              <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg>
+          </a>
+          <a routerLink="/home" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+              inicio
+          </a>  
+      </div>
+  </div>
+</section>
+
+<div class="container">
+  <section class="popular-categories">
+    <div class="container-fluid">
+      <div class="text-center">
+        <h1>Listado de Categorías</h1>
+        <div class="d-inline-block">
+          <img src="/assets/logofinal.png" alt="Descripción de la imagen" style="width: 100px; height: auto;" />
+        </div>
+      </div>
+      <br>
+      <button class="btn btn-primary" (click)="agregarCategoria()">Agregar Categoría</button>
+<br>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div *ngFor="let cat of categoriaApi" class="col">
+          <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 h-100 d-flex flex-column justify-content-between">
+            <a routerLink="/autoconfianza">
+              <img class="rounded-t-lg w-full h-auto" [src]="cat.imagen " alt="" />
+            </a>
+            <div class="p-5">
+              <a routerLink="/autoconfianza">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ cat.nombre }}</h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ cat.descripcion }}</p>
+              <a routerLink="autoconfianza" class="inline-flex items-center px-2 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                Ingresar
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                </svg>
+              </a>
+              <button (click)="editarCategoria(cat)" class="btn-edit bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-2 rounded">Editar</button>
+              <button (click)="eliminarCategoria(cat.id_categoria!)" class="btn-delete bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-2 rounded">Eliminar</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+

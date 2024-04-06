@@ -1,0 +1,45 @@
+
+/* footer  */
+/* logo girando */
+
+.logo img {
+  background-size    : cover;
+  background-position: left;
+  width              : 350px;
+  height             : 150px;
+  animation          : rotar 5s linear infinite;
+
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+@keyframes rotar {
+  from {
+    transform: rotateY(180deg);
+  }
+
+  to {
+    transform: rotateY(-180deg);
+  }
+
+
+}.mb-4.text-center a.btn.btn-outline-dark.btn-floating {
+  transition: background-color 0.3s ease;
+}
+
+.mb-4.text-center a.btn.btn-outline-dark.btn-floating:hover {
+  background-color: #0b72e0; /* Azul claro */
+}
+
+.logo-norma {
+  display: flex;
+  justify-content: center;
+  margin-left: 85%;
+  width: 20%;
+  margin-top: -11%; /* Ajuste el valor según sea necesario para mover la imagen hacia arriba */
+}
+
+
+
